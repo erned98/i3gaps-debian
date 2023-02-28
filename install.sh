@@ -20,7 +20,7 @@ sudo apt install -y network-manager-gnome
 sudo apt install -y lxappearance 
 
 # File Manager (eg. pcmanfm,krusader)
-sudo apt install -y thunar xfce4-settings ranger
+sudo apt install -y pcmanfm xfce4-settings ranger
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends
@@ -55,8 +55,8 @@ sudo apt install -y firefox-esr
 # Desktop background browser/handler 
 # feh --bg-fill /path/to/directory 
 # example if you want to use in autostart.sh for i3-gaps
-# sudo apt install -y nitrogen 
-sudo apt install -y feh
+sudo apt install -y nitrogen 
+# sudo apt install -y feh
 
 # Required packages for i3-gaps installation
 sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status
@@ -118,6 +118,9 @@ Type=XSession
 EOF
 sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 
+# Some additional apps
+sudo apt install -y mpv libreoffice libreoffice-style-breeze redshift android-tools-adb gimp irefox-esr-l10n-pl libreoffice-l10n-pl
+
 ########################################################
 # End of script for default config
 #
@@ -128,6 +131,6 @@ sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 source ~/i3gaps-debian/nerdfonts.sh
 source ~/i3gaps-debian/copyconf.sh
 
-sudo apt autoremove
+sudo apt autoremove --purge
 
-printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
+printf "\e[1;32mYou can now reboot! Thank you.\e[0m\n"
