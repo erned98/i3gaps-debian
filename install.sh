@@ -32,7 +32,7 @@ sudo systemctl enable acpid
 sudo apt install -y kitty
 
 # Sound packages
-sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
+sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa cmus
 
 # Neofetch/HTOP
 sudo apt install -y neofetch htop
