@@ -4,7 +4,7 @@
 # Install packages after installing base Debian with no GUI
 
 # xorg display server installation
-sudo apt install -y xorg 
+sudo apt install -y xorg arandr
 
 # Python installed for bumblebee-status. PACKAGE INCLUDES build-essential.
 sudo apt install -y python3-pip 
