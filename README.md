@@ -7,7 +7,7 @@ I used the expert method.
 ```
 sudo apt install git
 
-git clone https://github.com/drewgrif/i3gaps-debian
+git clone https://github.com/erned98/i3gaps-debian
 
 cd i3gaps-debian
 
