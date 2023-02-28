@@ -119,7 +119,7 @@ EOF
 sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 
 # Some additional apps
-sudo apt install -y mpv libreoffice libreoffice-style-breeze redshift android-tools-adb gimp irefox-esr-l10n-pl libreoffice-l10n-pl
+sudo apt install -y mpv libreoffice libreoffice-style-breeze redshift android-tools-adb gimp firefox-esr-l10n-pl libreoffice-l10n-pl gparted
 
 ########################################################
 # End of script for default config
